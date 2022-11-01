@@ -1,0 +1,32 @@
+/* ===== CONTACTO =====*/
+
+.contact__container {
+width: 50%;
+margin: 0 auto;
+
+.contact__input{
+    width: 100%;
+    font-size: $normal-font-size;
+    font-weight: $font-semi;
+    padding: 1rem;
+    margin: auto 0;
+    border-radius: .5rem;
+    border: 1.5px solid $second-color;
+    outline: none;
+    margin-bottom: $mb-4;
+  }
+  .contact__button{
+    cursor: pointer;
+    margin-left: auto;
+
+        display: block;
+        background-color: $first-color;
+        color: #fff;
+        border: none;
+        font-weight: 400;
+        padding: .75rem 2.5rem;
+        font-weight: $font-semi;
+        border-radius: 25px;
+    margin-bottom: 50px;}
+}
+  /* ===== FIN CONTACT =====*/

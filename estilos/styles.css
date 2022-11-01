@@ -1,0 +1,81 @@
+
+
+/*===== estructura grid =====*/
+
+
+
+/*===== HOME =====*/
+.home{
+  height: calc(100vh - 3rem);
+  row-gap: 1rem;
+}
+.home__data{
+ /*  align-self: center; */
+ padding-bottom: 300px;
+}
+@media only screen and (max-width: 767px) {
+  .home__data{
+    /*  align-self: center; */
+margin-top:200px;
+padding-top: 0px;
+   }  
+}
+
+
+/* FLEX SERVICIOS */
+
+
+article.item {
+  box-shadow: 0 0 15px #19727833;
+  height: 300px;
+  width: 300px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in;
+  flex-direction: column;
+  border-radius: 25px;
+  text-align: center;
+}
+
+article.item:hover{
+  box-shadow: 0 0 15px #19727810;
+transform: scale(1.02);
+}
+
+section.container-1 article.item {
+  width: 100%;
+}
+/* ===== EXPERIENCIA / HABILIDADES =====*/
+
+
+/* ===== TRABAJOS =====*/
+
+
+/* ===== MEDIA QUERIES AJUSTES=====*/
+
+
+  .home{
+    height: 100vh;
+  }
+  .home__data{
+    align-self: flex-end;
+  }
+  .home__social{
+    padding-top: 0;
+    padding-bottom: 2.5rem;
+    flex-direction: row;
+    align-self: flex-end;
+  }
+  .home__social-icon{
+    margin-bottom: 0;
+    margin-right: var(--mb-4);
+  }
+  .home__img{
+    width: 457px;
+    bottom: 15%;
+  }
+
+
+

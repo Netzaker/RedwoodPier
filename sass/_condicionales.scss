@@ -1,0 +1,78 @@
+/* condicionales. No sé bien qué uso le puedo dar, me gustaría usar los condicionales para el comportamiento responsive  */
+
+$type: texto;
+p {
+  @if $type == oceano {
+    color: blue;
+  } @else if $type == esfera {
+    color: red;
+  } @else if $type == texto {
+    color: rgba(25, 23, 23, 0.682)!important;
+  } @else {
+    color: black;
+  }
+}
+
+/* bucles para identificar el área de los container */
+
+@for $i from 1 through 2 {
+    .container-#{$i} {
+        border: solid 0px rgb(78, 78, 78)!important; 
+    }
+  }
+
+/* bucles entre + el número, más delgado el font weight*/
+  @for $i from 1 through 6 {
+    h#{$i} {
+        font-weight: (800-($i*100))!important; 
+    }
+  }
+
+  /* uso de each clases de "p" y sus respectivos colores*/
+
+  @each $pcolor in red, white, black {
+	.p-#{$pcolor}{
+	color:#{$pcolor}!important;
+	}
+}
+
+/* USO DE MAPAS */
+
+$redes: ( /*Declaramos nuestro mapa*/
+        instagram: #55acee,
+        facebook:  #0648d7,
+        linkedin: #0062ff
+); 
+
+
+.bxl-instagram {
+  color: map-get($redes, instagram);
+}
+
+.bxl-linkedin {
+    color: map-get($redes, linkedin);
+  }
+.bxl-facebook {
+    color: map-get($redes, facebook);
+
+  }
+
+
+  /* extend */
+
+  .button-extend{
+    @extend .contact__button;
+    margin: auto;
+  }
+  
+  /*  mixin */
+
+@mixin bloques($height, $width, $background) {
+    height: $height;
+    width: $width;
+    background-color: $background
+ }
+ .box-form {
+    @include bloques(100%, 100%, $second-color);
+ }
+ 

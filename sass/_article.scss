@@ -1,0 +1,29 @@
+main {
+            .item {
+                
+                box-shadow: 0 0 15px #19727833;
+                height: 300px;
+                width: 290px;
+                border: none;
+                margin-bottom: 30px;
+                padding-top: 2%;
+                transition: all 0.2s ease-in;
+                border-radius: 25px;
+                text-align: center;}
+            .item:hover{
+                box-shadow: 0 0 15px #19727810;
+                transform: scale(1.02);}
+            }
+    .container-2{
+        display: flex;
+        flex-direction: row;
+        align-content:space-between;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        justify-content: space-evenly;
+        text-align: center;
+        p{
+            padding-top: 5%;
+
+        }
+    }

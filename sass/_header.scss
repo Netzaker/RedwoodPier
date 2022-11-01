@@ -1,0 +1,34 @@
+$portrait-slider: 100px;
+
+.l-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: $z-fixed;
+    z-index: 1+100;
+    box-shadow: 0 1px 4px rgba(146,161,176,.15);
+    .navbar {
+    background-color: $second-color;
+    padding-left: 5%;
+    padding-right: 10%;
+        a {color: $third-color;
+            margin-right: $space15;            
+    }
+    }
+}
+
+body {
+    header{
+        nav{
+            bg-dark {
+                background-color: $second-color
+            }
+            .navbar-toggler {
+                border:none
+            }
+            .dropdown-menu {
+                background-color: $second-color;
+            }
+        }
+    }
+}

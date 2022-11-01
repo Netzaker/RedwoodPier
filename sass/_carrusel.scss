@@ -1,0 +1,49 @@
+/* ===== CARRUSEL =====*/
+
+main {
+        .container-2 {
+            z-index: $z-normal;
+            width: 100%!important;
+        }
+            .carousel-caption {
+                text-align: left;
+                h2{
+                    margin-top: -50%;
+                    color: $third-color;
+                    font-size: $big-font-size;}
+                    @include tablet {
+                        font-size:small
+                    }
+                }
+
+            }
+            .carousel-caption {
+                p{
+                    color: $third-color;
+                    max-width: 600px;
+                    @include tablet {
+                        font-size:small
+                }
+                }
+
+            
+    }
+
+/* ===== COMPORTAMIENTO MOBLE CARRUSEL =====*/
+
+@media screen and (min-width: 768px) {
+    main{
+
+            .container-2 {
+                .carousel-caption {
+                    p {
+                        font-size: small;
+                    }
+                    h2 {font-size: small;}
+                }
+            }
+        }
+    }
+
+
+/* ===== FIN CARRUSEL =====*/

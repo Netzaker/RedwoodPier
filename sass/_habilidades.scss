@@ -1,0 +1,76 @@
+/* ===== EXPERIENCIA =====*/
+
+main
+{
+        .container-1 {
+                .EXP-container{
+                  row-gap: 2rem;
+                 text-align: center;
+                  .bd-grid {
+                    grid-template-columns: 40% 40%;
+                    grid-gap: 10%;
+                  }  
+                .EXP-subtitle{
+                margin-bottom: $mb-2;
+
+        }
+        .EXP-text{
+            margin-bottom: $mb-4;
+
+          }
+          .EXP-data{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            font-weight: $font-semi;
+            padding: .5rem 1rem;
+            margin-bottom: $mb-4;
+            border-radius: .5rem;
+            box-shadow: 0 4px 25px rgba(14,36,49,.15);
+          }
+          .EXP-icon{
+            font-size: 2rem;
+            margin-right: $mb-2;
+            color: $first-color;
+          }
+          .EXP-names{
+            display: flex;
+            align-items: center;
+          }
+        .EXP-bar{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: $first-color;
+            height: .25rem;
+            border-radius: .5rem;
+            z-index: $z-back;
+          }
+          .EXP-html{
+            width: 95%;
+          }
+          .EXP-css{
+            width: 90%;
+          }
+          .EXP-js{
+            width: 100%;
+          }
+          .EXP-ux{
+            width: 75%;
+          }
+          .EXP-img{
+            border-radius: .5rem;
+            width: 400px;
+            margin: auto;
+          }
+    }
+}
+
+  }
+
+  
+/* ===== FIN EXPERINCIA =====*/
+  
+
+  

@@ -1,0 +1,82 @@
+/* ===== COMPORTAMIENTO MOBILE GENERAL =====*/
+
+$portrait-slider: 100px;
+$portrait-text: 4rem;
+
+
+@media screen and (min-width: 1024px) {
+    .bd-grid {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+
+  @media only screen and (max-width: 767px) {
+    h2 {font-size: ($portrait-text)-2.5!important;}
+
+    .container-1 .carousel{
+      margin-top: ($portrait-slider)-20;}  
+    .carousel-inner{
+      margin-top: 120px!important;
+    }.service-boton {
+      max-width: 150px;
+      max-height: 30px;
+      font-size: 0.8em;
+      
+    }
+    .service-boton a{
+    display: flex!important;
+    margin-top: -6px!important;
+}}
+
+
+@media only screen and (max-width: 767px) {
+   main section .carousel {
+    p{display: none;}
+   }
+   main .section-2 .about__img img {
+     margin-top: -100px;
+   }
+   main .container-2 {margin-top:-($portrait-slider);
+  }
+  article h3 {
+    max-width: 90%;
+    padding: 0 0 0 0;
+    margin:auto;
+    text-align: center;
+}
+article p {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
+  .EXP-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:($portrait-slider)/-2;
+  }
+  .work__container {
+    margin-top: ($portrait-slider)/-2;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  main .section-2 .about__container {
+display: flex;
+flex-wrap:wrap;
+  }
+  .texto-form {
+    margin-top:($portrait-text)*-1;
+    width: 300px;
+    margin-left: -20%;
+    text-align: center;
+  }
+}
+
+/* USO DE CONDCIONALES MOBILE VERSION */
+$vista:mobile;
+

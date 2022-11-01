@@ -1,0 +1,24 @@
+main {
+    .section-2{
+        .about__img img{
+            width: 500px!important;
+          }
+        .about__container{
+            row-gap: 2rem;
+        justify-content: center;
+            text-align: left;
+          }
+        .about__subtitle{
+            margin-bottom: $mb-2;
+            font-size: $h2-font-size;
+          }
+        .about__img{
+            justify-self: center;
+          }
+        .about__img img{
+            width: 400px;
+            border-radius: .5rem;
+          }
+    }
+}
+
